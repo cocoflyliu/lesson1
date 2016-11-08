@@ -6,8 +6,17 @@
 	<title>TITLE HERE</title>
   <link rel="stylesheet" type="text/css" href="./style/indexStyle.css">
   <script async src="./jsfile/indexJS.js"></script>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+
 </head>
 <body>
+ 
+  <script type="text/javascript">
+    d3.csv("./stocks.csv",
+          function(data){
+        console.log(data)
+    } );
+    </script>
  
   <div class="header">
     <div class="header"id="logo">logo</div>
