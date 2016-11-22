@@ -3,21 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <script src="https://d3js.org/d3.v4.min.js"></script>
-    <title>Document</title>
+    <title>readcsv_G2</title>
 </head>
 <body>
-    <script type="text/javascript">
-    d3.csv("./stocks.csv",
-          
+    <script type="text/javascript">          
           
 var parseTime = d3.timeParse("%d-%b-%y");
+        
 d3.csv("./stocks.csv", 
 
 	function(data)
 	{
 		var ln   = data.length;
-		var maxy = d3.max(data.close);
+    
+        var maxy = d3.max(data.close);
 		var miny = d3.min(data.close);
+    
 		data.forEach(
 			function(d)
 			{
